@@ -22,9 +22,11 @@
     <nav class="sticky top-0 z-40 bg-gray-700 h-20 w-full bg-opacity-90 content-center">
         <div class="sm:ml-10 sm:flex sm:h-full">
             <div class="h-full w-24 inline-block content-center">
-                <img class="h-12 min-w-14 ml-5"
+                <a href="/src/index.html">
+                    <img class="h-12 min-w-14 ml-5"
                     src="https://static.vecteezy.com/system/resources/previews/019/897/579/original/modern-real-estate-and-construction-logo-free-png.png"
-                    alt="">
+                    alt="logo">
+                </a>
             </div>
 
             <ul class="hidden sm:flex justify-evenly gap-5 px-10 w-full items-center">
@@ -67,158 +69,179 @@
         </ul>
     </nav>
 
+
     <div class="m-2">
-        <div class="flex m-4 flex-col md:flex-row items-center">
-            <div class=" max-w-6xl">
-                <div>
-                    <img src="images/garita.jpg" alt="Construccion de edificio" class="rounded-2xl">
+        <div class=" mx-auto flex flex-col lg:flex-row items-center gap-4">
+
+            <!-- Imagen -->
+            <div class="w-full lg:w-1/2">
+                <img src="images/garita.jpg" alt="Construccion de edificio" class="rounded-2xl w-full" />
+            </div>
+
+            <!-- Contenido (a la derecha en pantallas grandes) -->
+            <div class="flex flex-col items-center w-full lg:w-1/2 gap-4">
+
+                <!-- Primer bloque de texto -->
+                <div class="bg-gray-100 rounded-2xl p-6">
+                    <h3 class="text-3xl text-black text-center font-medium mb-4">
+                        Fuentes del Valle Norte
+                    </h3>
+                    <p class="text-justify min-w-72">
+                        Residenciales <span class="text-blue-700 font-bold text-xl">Fuentes del valle</span> es un
+                        proyecto pensado para una vida urbana en una de las zonas más comerciales de la ciudad lo que es
+                        zona 8, su ubicación estratégica permite conexión con las principales avenidas de la ciudad.
+                    </p>
                 </div>
-            </div>
-            <div class=" bg-gray-100 rounded-2xl">
-                <h3 class=" text-3xl text-black text-center m-5 font-medium">Fuentes del Valle Norte</h3>
-                <p class="m-8 text-justify min-w-72"> Residenciales<span class="text-blue-700 font-bold text-xl">
-                        Fuentes del
-                        valle</span> es un proyecto pensado para una vida urbana en una de las zonas más comerciales de
-                    la ciudad lo que es zona 8, su ubicación estratégica permite conexión con las principales avenidas
-                    de la ciudad. </p>
-            </div>
-        </div>
 
-        <br><br id="aliados"><br>
-        <h3 class=" text-3xl font-bold text-black text-center m-5 animated" data-animate="animate-fade-in-down">ESTAS
-            CERCA DE</h3>
-        <div class="flex flex-wrap ">
-
-            <div class="flex-auto  m-5 w-1/5 animated" data-animate="animate-scale-up-rotate">
-                <img src="images/autobus.png" alt="bus" class="m-auto">
-                <p class="text-center">
-                    Transporte publico
-                </p>
-            </div>
-            <div class="flex-auto  m-5 w-1/5 animated" data-animate="animate-scale-up-rotate">
-                <img src="images/centro-comercial.png" alt="bus" class="m-auto">
-                <p class="text-center">
-                    Centros comerciales
-                </p>
-            </div>
-            <div class="flex-auto  m-5 w-1/5 animated" data-animate="animate-scale-up-rotate">
-                <img src="images//colegio.png" alt="bus" class="m-auto">
-                <p class="text-center">
-                    Centros educativos
-                </p>
-            </div>
-            <div class="flex-auto  m-5 w-1/5 animated" data-animate="animate-scale-up-rotate">
-                <img src="images/autobus.png" alt="bus" class="m-auto">
-                <p class="text-center">
-                    Bancos
-                </p>
-            </div>
-            <div class="flex-auto m-5 w-1/5 animated" data-animate="animate-scale-up-rotate">
-                <img src="images/market.png" alt="bus" class="m-auto">
-                <p class="text-center">
-                    Mercados
-                </p>
-            </div>
-            <div class="flex-auto m-5 w-1/5 animated" data-animate="animate-scale-up-rotate">
-                <img src="images/plato.png" alt="bus" class="m-auto">
-                <p class="text-center">
-                    Restaurantes
-                </p>
-            </div>
-
-        </div>
-
-        <br>
-        <br>
-        <br>
-
-
-        <h3 class=" text-3xl font-bold text-black text-center m-5 animated" data-animate="animate-fade-in-down">ELIGE TU
-            ESTILO</h3>
-        <div class="flex m-4 flex-col md:flex-row items-center">
-            <div class="flex-auto">
-                <div>
-                    <img src="images/casa1.jpg" alt="Construccion de edificio"
-                        class="rounded-2xl size-full max-w-6xl h-96 object-cover">
+                <!-- Segundo bloque: botón -->
+                <div class="bg-gray-100 rounded-2xl w-full p-6 text-center">
+                    <h3 class="text-black font-medium mb-4">
+                        Haz tu <span class="text-blue-700 font-bold">cita</span> ahora!
+                    </h3>
+                    <a href="/src/formulario.html"
+                        class="bg-blue-700 hover:bg-blue-800 text-white font-semibold py-2 px-4 rounded-xl shadow-md transition duration-300">
+                        Crear cita
+                </a>
                 </div>
-            </div>
-            <div class="flex-auto">
-                <div>
-                    <img src="images/casa2.jpg" alt="Construccion de edificio"
-                        class="rounded-2xl size-full max-w-6xl h-96 object-cover">
-                </div>
-            </div>
-            <div class="flex-auto">
-                <div>
-                    <img src="images/casa3.jpg" alt="Construccion de edificio"
-                        class="rounded-2xl size-full max-w-6xl h-96 object-cover">
-                </div>
+
             </div>
         </div>
+    </div>
 
-        <br id="amenidades">
-        <h3 class=" text-3xl font-bold text-black text-center m-5 animated" data-animate="animate-fade-in-down">
-            AMENIDADES</h3>
+    <br><br id="aliados"><br>
+    <h3 class=" text-3xl font-bold text-black text-center m-5 animated" data-animate="animate-fade-in-down">ESTAS
+        CERCA DE</h3>
+    <div class="flex flex-wrap ">
 
-        <div class="flex m-4 flex-row items-center mt-20 ">
-            <div class="flex-auto animated" data-animate="animate-slide-up">
-                <img src="images/Salon_social_mid.png" alt="SALON SOCIAL"
-                    class="rounded-2xl size-4/5 m-auto border-white border-y-4 hover:border-black">
-                <p class="text-center font-medium text-gray-800">
-                    Salon Social
-                </p>
-            </div>
-            <div class="flex-auto animated" data-animate="animate-slide-up">
-                <img src="images/Guarderia_mid.png" alt="GuarderiaL"
-                    class="rounded-2xl size-4/5 m-auto -translate-y-10 border-white border-y-4 hover:border-black">
-                <p class="text-center font-medium text-gray-800 -translate-y-10">
-                    Guarderia
-                </p>
-            </div>
-            <div class="flex-auto animated" data-animate="animate-slide-up">
-                <img src="images/Juegos_mid.png" alt="SALON SOCIAL"
-                    class="rounded-2xl size-4/5 m-auto border-white border-y-4 hover:border-black">
-                <p class="text-center font-medium text-gray-800">
-                    Juegos infantiles
-                </p>
-            </div>
+        <div class="flex-auto  m-5 w-1/5 animated" data-animate="animate-scale-up-rotate">
+            <img src="images/autobus.png" alt="bus" class="m-auto">
+            <p class="text-center">
+                Transporte publico
+            </p>
+        </div>
+        <div class="flex-auto  m-5 w-1/5 animated" data-animate="animate-scale-up-rotate">
+            <img src="images/centro-comercial.png" alt="bus" class="m-auto">
+            <p class="text-center">
+                Centros comerciales
+            </p>
+        </div>
+        <div class="flex-auto  m-5 w-1/5 animated" data-animate="animate-scale-up-rotate">
+            <img src="images//colegio.png" alt="bus" class="m-auto">
+            <p class="text-center">
+                Centros educativos
+            </p>
+        </div>
+        <div class="flex-auto  m-5 w-1/5 animated" data-animate="animate-scale-up-rotate">
+            <img src="images/autobus.png" alt="bus" class="m-auto">
+            <p class="text-center">
+                Bancos
+            </p>
+        </div>
+        <div class="flex-auto m-5 w-1/5 animated" data-animate="animate-scale-up-rotate">
+            <img src="images/market.png" alt="bus" class="m-auto">
+            <p class="text-center">
+                Mercados
+            </p>
+        </div>
+        <div class="flex-auto m-5 w-1/5 animated" data-animate="animate-scale-up-rotate">
+            <img src="images/plato.png" alt="bus" class="m-auto">
+            <p class="text-center">
+                Restaurantes
+            </p>
         </div>
 
-        <br id="about-us">
-        <br>
-        <br>
+    </div>
 
-        <h3 class=" text-3xl font-bold text-black text-center m-5 animated" data-animate="animate-fade-in-down"
-            >SOBRE
-            NOSOTROS</h3>
-        <div class=" bg-gray-100 rounded-2xl text-xl font-light p-10 mx-5">
-            <p class=" text-justify min-w-72"> ¿Buscas una vida tranquila y en armonía con la naturaleza?
-                Descubre <span class="text-blue-700 font-bold">Fuentes del Valle Norte</span>, el proyecto residencial
-                que combina precios accesibles con una calidad de vida
-                excepcional. Elige entre tres modelos de casas modernas y funcionales, rodeadas de un parque ecológico
-                privado que
-                te permitirá disfrutar de espacios verdes y respirar aire puro. </p>
-            <br>
-            <p class=" text-justify min-w-72"> Además, contamos con una doble garita de seguridad para tu
-                tranquilidad. En Fuentes del Valle Norte
-                6,
-                encontrarás el hogar perfecto para ti y tu familia. ¡Aprovecha esta oportunidad única y haz realidad tus
-                sueños!
-                No lo dejes pasar, vive la experiencia de una comunidad armoniosa y segura. Contáctanos hoy mismo. </p>
-        </div>
+    <br>
+    <br>
+    <br>
 
-        <div class="w-5/6 sm:w-2/3 m-auto bg-gray-100 rounded-2xl mt-20">
-            <iframe class="h-96 w-full"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.4437990600854!2d-90.46057482512909!3d14.687476874944256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589995d6d608499%3A0x6bb9802ca03bb08a!2sFuentes%20Del%20Valle%20Norte%202!5e0!3m2!1ses!2sgt!4v1746919806651!5m2!1ses!2sgt"
-                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+
+    <h3 class=" text-3xl font-bold text-black text-center m-5 animated" data-animate="animate-fade-in-down">ELIGE TU
+        ESTILO</h3>
+    <div class="flex m-4 flex-col md:flex-row items-center">
+        <div class="flex-auto">
             <div>
-                <h3 class="text-blue-700 flex-none font-bold text-center pt-2">¿Cómo llegar?</h3>
-                <p class="px-4 pb-3 text-sm text-center">
-                    Km 10.5 Carr. a San Pedro Ayampuc, Aldea La Laguneta, Municipio de Chinautla, Guatemala.
-                </p>
+                <img src="images/casa1.jpg" alt="Construccion de edificio"
+                    class="rounded-2xl size-full max-w-6xl h-96 object-cover">
             </div>
         </div>
+        <div class="flex-auto">
+            <div>
+                <img src="images/casa2.jpg" alt="Construccion de edificio"
+                    class="rounded-2xl size-full max-w-6xl h-96 object-cover">
+            </div>
+        </div>
+        <div class="flex-auto">
+            <div>
+                <img src="images/casa3.jpg" alt="Construccion de edificio"
+                    class="rounded-2xl size-full max-w-6xl h-96 object-cover">
+            </div>
+        </div>
+    </div>
+
+    <br id="amenidades">
+    <h3 class=" text-3xl font-bold text-black text-center m-5 animated" data-animate="animate-fade-in-down">
+        AMENIDADES</h3>
+
+    <div class="flex m-4 flex-row items-center mt-20 ">
+        <div class="flex-auto animated" data-animate="animate-slide-up">
+            <img src="images/Salon_social_mid.png" alt="SALON SOCIAL"
+                class="rounded-2xl size-4/5 m-auto border-white border-y-4 hover:border-black">
+            <p class="text-center font-medium text-gray-800">
+                Salon Social
+            </p>
+        </div>
+        <div class="flex-auto animated" data-animate="animate-slide-up">
+            <img src="images/Guarderia_mid.png" alt="GuarderiaL"
+                class="rounded-2xl size-4/5 m-auto -translate-y-10 border-white border-y-4 hover:border-black">
+            <p class="text-center font-medium text-gray-800 -translate-y-10">
+                Guarderia
+            </p>
+        </div>
+        <div class="flex-auto animated" data-animate="animate-slide-up">
+            <img src="images/Juegos_mid.png" alt="SALON SOCIAL"
+                class="rounded-2xl size-4/5 m-auto border-white border-y-4 hover:border-black">
+            <p class="text-center font-medium text-gray-800">
+                Juegos infantiles
+            </p>
+        </div>
+    </div>
+
+    <br id="about-us">
+    <br>
+    <br>
+
+    <h3 class=" text-3xl font-bold text-black text-center m-5 animated" data-animate="animate-fade-in-down">SOBRE
+        NOSOTROS</h3>
+    <div class=" bg-gray-100 rounded-2xl text-xl font-light p-10 mx-5">
+        <p class=" text-justify min-w-72"> ¿Buscas una vida tranquila y en armonía con la naturaleza?
+            Descubre <span class="text-blue-700 font-bold">Fuentes del Valle Norte</span>, el proyecto residencial
+            que combina precios accesibles con una calidad de vida
+            excepcional. Elige entre tres modelos de casas modernas y funcionales, rodeadas de un parque ecológico
+            privado que
+            te permitirá disfrutar de espacios verdes y respirar aire puro. </p>
+        <br>
+        <p class=" text-justify min-w-72"> Además, contamos con una doble garita de seguridad para tu
+            tranquilidad. En Fuentes del Valle Norte
+            6,
+            encontrarás el hogar perfecto para ti y tu familia. ¡Aprovecha esta oportunidad única y haz realidad tus
+            sueños!
+            No lo dejes pasar, vive la experiencia de una comunidad armoniosa y segura. Contáctanos hoy mismo. </p>
+    </div>
+
+    <div class="w-5/6 sm:w-2/3 m-auto bg-gray-100 rounded-2xl mt-20">
+        <iframe class="h-96 w-full"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.4437990600854!2d-90.46057482512909!3d14.687476874944256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589995d6d608499%3A0x6bb9802ca03bb08a!2sFuentes%20Del%20Valle%20Norte%202!5e0!3m2!1ses!2sgt!4v1746919806651!5m2!1ses!2sgt"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div>
+            <h3 class="text-blue-700 flex-none font-bold text-center pt-2">¿Cómo llegar?</h3>
+            <p class="px-4 pb-3 text-sm text-center">
+                Km 10.5 Carr. a San Pedro Ayampuc, Aldea La Laguneta, Municipio de Chinautla, Guatemala.
+            </p>
+        </div>
+    </div>
     </div>
 
     <footer id="contact-us">

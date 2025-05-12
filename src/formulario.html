@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muestra Lotificacion</title>
+    <link rel="stylesheet" href="tailwindStyle.css">
+    <script src="/src/responsiveNavMenu.js"></script>
+    <script src="/src/animateOnView.js"></script>
+</head>
+
+<body class="bg-white">
+
+    <nav class="sticky top-0 z-40 bg-gray-700 h-20 w-full bg-opacity-90 content-center">
+        <div class="sm:ml-10 sm:flex sm:h-full">
+            <div class="h-full w-24 inline-block content-center">
+                <a href="/src/index.html">
+                    <img class="h-12 min-w-14 ml-5"
+                    src="https://static.vecteezy.com/system/resources/previews/019/897/579/original/modern-real-estate-and-construction-logo-free-png.png"
+                    alt="logo">
+                </a>
+            </div>
+
+            <ul class="hidden sm:flex justify-evenly gap-5 px-10 w-full items-center">
+                <li class="nav-item hover:underline ">
+                    <a href="/src/index.html" class="text-xl">INICIO</a>
+                </li>
+            </ul>
+
+            <!--MOBILE HAMBURGUER ICON TO OPEN MENU-->
+            <div class="text-white  h-full w-24 float-right m-auto sm:hidden" id="ham-button">
+                <button id="menu-toggle" class="text-3xl focus:outline-none text-center w-24 pt-3">
+                    ☰
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Nav Menu (absolute inside sticky nav) -->
+        <ul class="hidden absolute left-0 top-full w-full px-10 bg-slate-500 sm:hidden z-40" id="dropdown-menu">
+            <li class="nav-item hover:underline py-2">
+                <a href="/src/index.html" class="text-xl">INICIO</a>
+            </li>
+        </ul>
+    </nav>
+
+    <form action="https://formspree.io/f/xbloabbl" method="POST" class="bg-gray-100 p-6 rounded-2xl shadow-md w-11/12 max-w-xl mx-auto mt-10 space-y-4">
+        <h2 class="text-2xl font-semibold text-black text-center">Solicita más información</h2>
+
+        <!-- Nombre completo -->
+        <div>
+            <label for="nombre" class="block text-black font-medium mb-1">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" required
+                class="w-full p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-700" />
+        </div>
+
+        <!-- Teléfono -->
+        <div>
+            <label for="telefono" class="block text-black font-medium mb-1">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" required
+                class="w-full p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-700" />
+        </div>
+
+        <!-- Correo electrónico -->
+        <div>
+            <label for="correo" class="block text-black font-medium mb-1">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" required
+                class="w-full p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-700" />
+        </div>
+
+        <!-- Número de habitaciones -->
+        <div>
+            <label for="habitaciones" class="block text-black font-medium mb-1">¿Cuántas habitaciones deseas?</label>
+            <select id="habitaciones" name="habitaciones" required
+                class="w-full p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-700">
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="1">1 habitación</option>
+                <option value="2">2 habitaciones</option>
+                <option value="3">3 habitaciones</option>
+                <option value="4+">4 o más</option>
+            </select>
+        </div>
+
+        <!-- Rango de precio -->
+        <div>
+            <label for="presupuesto" class="block text-black font-medium mb-1">Rango de precio</label>
+            <select id="presupuesto" name="presupuesto" required
+                class="w-full p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-700">
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="menos-250k">Menos de Q250,000</option>
+                <option value="250k-500k">Q250,000 - Q500,000</option>
+                <option value="500k-1m">Q500,000 - Q1,000,000</option>
+                <option value="mas-1m">Más de Q1,000,000</option>
+            </select>
+        </div>
+
+        <!-- Comentarios -->
+        <div>
+            <label for="comentarios" class="block text-black font-medium mb-1">Comentarios o preguntas</label>
+            <textarea id="comentarios" name="comentarios" rows="3"
+                class="w-full p-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-700"></textarea>
+        </div>
+
+         <!-- Campo oculto para colocar asunto en el correo-->
+        <input type="hidden" name="_subject" value="Nueva solicitud de información de apartamentos" />
+
+        <!-- Botón de envío -->
+        <div class="text-center">
+            <button type="submit"
+                class="bg-blue-700 hover:bg-blue-800 text-white font-semibold py-2 px-6 rounded-xl shadow-md transition duration-300">
+                Enviar solicitud
+            </button>
+        </div>
+    </form>
+
+    <div class="w-5/6 sm:w-2/3 m-auto bg-gray-100 rounded-2xl mt-20">
+        <iframe class="h-96 w-full"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.4437990600854!2d-90.46057482512909!3d14.687476874944256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589995d6d608499%3A0x6bb9802ca03bb08a!2sFuentes%20Del%20Valle%20Norte%202!5e0!3m2!1ses!2sgt!4v1746919806651!5m2!1ses!2sgt"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div>
+            <h3 class="text-blue-700 flex-none font-bold text-center pt-2">¿Cómo llegar?</h3>
+            <p class="px-4 pb-3 text-sm text-center">
+                Km 10.5 Carr. a San Pedro Ayampuc, Aldea La Laguneta, Municipio de Chinautla, Guatemala.
+            </p>
+        </div>
+    </div>
+    </div>
+
+    <footer id="contact-us">
+        <div
+            class="bg-gray-100 relative flex flex-col sm:flex-row flex-auto w-4/5  translate-y-20 z-30 m-auto items-center rounded-2xl">
+
+            <div class="m-1">
+                <h3 class="text-blue-700 flex-none font-bold text-center">Showroom</h3>
+                <div class="flex">
+                    <svg class="min-w-10 max-w-14 translate-y-1" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        class="size-5 inline-block" viewBox="0 0 24 24">
+                        <g stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                            <path
+                                d="M12 21c3.5-3.6 7-6.824 7-10.8C19 6.224 15.866 3 12 3s-7 3.224-7 7.2 3.5 7.2 7 10.8Z" />
+                            <path d="M12 12a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
+                        </g>
+                    </svg>
+                    <p class="text-center m-2">12 Avenida 1-25 zona 10, Edif. Géminis 10, Tercer nivel, Local 303.
+                    </p>
+                </div>
+            </div>
+            <div class="m-1">
+                <h3 class="text-blue-700 flex-none font-bold text-center">Horarios</h3>
+                <div class="flex">
+                    <svg class="min-w-10 max-w-14 translate-y-1" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24">
+                        <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 9h18M7 3v2m10-2v2M6 13h2m-2 4h2m3-4h2m-2 4h2m3-4h2m-2 4h2M6.2 21h11.6c1.12 0 1.68 0 2.108-.218a2 2 0 0 0 .874-.874C21 19.48 21 18.92 21 17.8V8.2c0-1.12 0-1.68-.218-2.108a2 2 0 0 0-.874-.874C19.48 5 18.92 5 17.8 5H6.2c-1.12 0-1.68 0-2.108.218a2 2 0 0 0-.874.874C3 6.52 3 7.08 3 8.2v9.6c0 1.12 0 1.68.218 2.108a2 2 0 0 0 .874.874C4.52 21 5.08 21 6.2 21Z" />
+                    </svg>
+                    <p class="text-center m-2">Lunes a viernes 09:00 a 17:30, Sábado 10:00 a 16:30 y Domingo 10:00 a
+                        15:30
+                    </p>
+                </div>
+            </div>
+            <div class="m-1">
+                <h3 class="text-blue-700 flex-none font-bold text-center">Contacto</h3>
+                <div class="flex">
+                    <svg class="min-w-14 max-w-14 translate-y-1" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512" xml:space="preserve">
+                        <g stroke-width="0" />
+                        <g stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M341.601 0H170.397c-29.29 0-53.12 23.828-53.12 53.121v405.758c0 29.29 23.83 53.121 53.12 53.121h171.204c29.292 0 53.121-23.832 53.121-53.117V53.121C394.722 23.828 370.893 0 341.601 0m-85.602 480.622c-11.869 0-21.526-9.658-21.526-21.526 0-11.871 9.656-21.526 21.526-21.526s21.526 9.655 21.526 21.526c0 11.868-9.657 21.526-21.526 21.526M363.274 67.271v340.156h-214.55V67.271z"
+                            style="fill:#000" />
+                    </svg>
+                    <p class="text-center m-2">Tel:(502)2295-3808 <br>
+                        Email: barriodonbosco@&#8203modusvivendi&#8203.com.gt
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="bg-gray-700 absolute w-full h-60 z-0">
+
+        </div>
+    </footer>
+</body>
+
+</html>
